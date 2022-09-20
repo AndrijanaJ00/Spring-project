@@ -1,0 +1,25 @@
+<div class="header-container">
+    <div class="logo">The best books</div>
+    <div class="logout">Logout</div>
+  </div>
+<div class="home-container">
+    <div class="all-books">
+        <div class="trending-books">
+            <div class="top">
+                <h4>Trending books</h4>
+                <div class="view-all">View All</div>
+            </div>
+            <div class="books-thumbnail">
+                <div class="book" *ngFor="let book of books">
+                    <div class="cover">
+                        <img [src]="book.image" alt="">
+                    </div><br>
+                    <div class="detail">
+                        <div class="name"> <b> Name:  </b> {{book.name}}</div>                      
+                    </div>
+                    <div class="rating"> <b> Rating: </b>  {{book.rating}} </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
